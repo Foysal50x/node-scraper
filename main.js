@@ -116,20 +116,3 @@ async function main() {
 }
 
 main().catch(console.error);
-
-// async function scrollDown(page) {
-//   await page.$eval("body", (e) => {
-//     e.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" });
-//   });
-// }
-
-// const address = await page.$eval(".p-carousel-content", (el) =>
-//   Array.from(el.childNodes)
-//     .map((child) =>
-//       Array.from(child.childNodes).map((grandChild) =>
-//         grandChild.textContent.trim()
-//       )
-//     )
-//     .reduce((acc, curr) => acc.concat(curr), [])
-//     .filter(Boolean)
-// );
