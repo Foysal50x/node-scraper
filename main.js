@@ -76,7 +76,7 @@ async function main() {
       visible: true,
       hidden: true,
     }
-  );
+  ).catch(e => {})
   progressor.advance();
 
   /**
